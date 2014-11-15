@@ -35,6 +35,15 @@ gem 'rails-html-sanitizer', '~> 1.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#hold all of the secret keys and stuff
+gem 'figaro'
+
+#mechanical turk gem
+gem 'rturk'
+
+#stripe to accept donations
+gem 'stripe'
+
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

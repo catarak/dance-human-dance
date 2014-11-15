@@ -1,0 +1,1 @@
+RTurk.setup(ENV['AWSACCESSKEYID'], ENV['AWSSECRETACCESSKEY'], :sandbox => true)
