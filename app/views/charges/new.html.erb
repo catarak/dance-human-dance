@@ -1,4 +1,7 @@
 <h1>Dance, Human, Dance!</h1>
 <h2>Donate to generate a task for a real human person person to do.</h2>
 <h3>Current balance is <%= @balance %></h3>
+<% if @balance < 500 -%>
+	<h3> When the balance is at least $5.00, a new task will be generated </h3> 
+<% end -%> 
 <%= render 'form' %>
