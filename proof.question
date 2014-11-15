@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionForm xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd">
+  <Question>
+   <QuestionIdentifier>1</QuestionIdentifier>
+   <QuestionContent>
+     <Text>Please enter the url to your Vine video as proof:</Text>
+   </QuestionContent>
+   <AnswerSpecification>
+     <FreeTextAnswer>
+      <Constraints>
+        <AnswerFormatRegex regex='^<iframe class="vine-embed" src="https://vine\.co/v/)[a-z|A-Z|0-9]{11}(/embed/simple" width=")[0-9]+(" height=")[0-9]+(" frameborder="0"></iframe><script async src="//platform\.vine\.co/static/scripts/embed\.js" charset="utf-8"></script>$'
+         errorText="You must enter a vine embed code."/>    
+      </Constraints>
+    </FreeTextAnswer>
+   </AnswerSpecification>
+  </Question>
+</QuestionForm>
